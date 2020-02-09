@@ -2,8 +2,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
-import './assets/styles/reset.css'// 解决不同浏览器样式统一适配问题
-import './assets/styles/border.css'// 解决1px边框在2dpr和3dpr上像素重叠问题
+import 'styles/reset.css'// 解决不同浏览器样式统一适配问题
+import 'styles/border.css'// 解决1px边框在2dpr和3dpr上像素重叠问题
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 // 解决移动端300ms延迟问题
