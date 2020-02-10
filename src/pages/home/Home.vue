@@ -3,6 +3,7 @@
   <div>
     <home-header></home-header>
     <home-swiper></home-swiper>
+    <home-icons></home-icons>
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 // export default允许import该模块使使用任何名称
 import HomeHeader from './components/Header'
 import HomeSwiper from './components/Swiper'
+import HomeIcons from './components/Icon'
 export default {
   name: 'home',
   components: {
     HomeHeader,
-    HomeSwiper
+    HomeSwiper,
+    HomeIcons
   }
 }
 </script>
