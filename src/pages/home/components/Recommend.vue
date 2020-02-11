@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,27 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1903/b0/b0a81289b537c934a3.water.jpg_200x200_816c0f59.jpg',
-        title: '澳门蹦极跳',
-        desc: '澳门全球十大观光塔之一'
-      },
-      {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1903/b0/b0a81289b537c934a3.water.jpg_200x200_816c0f59.jpg',
-        title: '澳门蹦极跳',
-        desc: '澳门全球十大观光塔之一'
-      },
-      {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1903/b0/b0a81289b537c934a3.water.jpg_200x200_816c0f59.jpg',
-        title: '澳门蹦极跳',
-        desc: '澳门全球十大观光塔之一'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
