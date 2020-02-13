@@ -1,16 +1,17 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
-    <li class="item">A</li>
+    <li class="item" v-for="(item, key) of cities" :key="key">
+      {{key}}
+    </li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: 'CityAlphabet'
+  name: 'CityAlphabet',
+  props: {
+    cities: Object
+  }
 }
 </script>
 
@@ -22,7 +23,8 @@ export default {
     justify-content center
     position absolute
     top 1.58rem
-    left 8.1rem
+    left 100%
+    transform translateX(-.4rem)
     bottom 0
     width .4rem
     .item
