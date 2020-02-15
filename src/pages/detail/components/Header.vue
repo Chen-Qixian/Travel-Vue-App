@@ -73,6 +73,7 @@ export default {
       line-height .8rem
       text-align center
   .header-fixed
+    z-index 99
     position fixed
     left 0
     right 0
