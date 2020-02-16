@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // 转发代理表：axios调用get方法将前缀转发到到路径名
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
@@ -57,6 +58,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
+    // 打包上线后，在服务器的路径，默认为服务器根路径
     assetsPublicPath: '/',
 
     /**

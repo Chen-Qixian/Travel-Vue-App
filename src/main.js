@@ -4,6 +4,7 @@ import router from './router'
 import fastClick from 'fastclick'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store'
+import 'babel-polyfill'
 import 'styles/reset.css'// 解决不同浏览器样式统一适配问题
 import 'styles/border.css'// 解决1px边框在2dpr和3dpr上像素重叠问题
 import 'styles/iconfont.css'
